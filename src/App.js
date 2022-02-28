@@ -8,13 +8,12 @@ function App() {
   counter++;
   return (
     <div className='App'>
-    <Navbar/>
+    <Navbar links ={['Home', 'Anout Me', 'Portfolio', 'Contact Me']}/>
+    // <AboutMe/>
+    // <Portfolio/>
+    <Counter text='Here is the count captain:'/>
     {console.log('hello world', counter)}
-
-  
-  
-    
-   <h2> Welcome to my portfolio</h2>
+    <h2> Welcome to my portfolio</h2>
     </div>
   );
 }
