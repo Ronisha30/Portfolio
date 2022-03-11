@@ -1,19 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './Components/Navbar';
-import Counter from './Components/Counter/Counter';
-let counter = 0;
+// import './App.css';
+import Navbar from './Components/Navbar/Nb';
+import About from './Components/About/About';
+import Portfolio from './Components/Portfolio/Portfolio';
+import Profile from './Components/Portfolio/Portfolio';
+import Projects from './Components/Portfolio/Portfolio';
+import { BrowserRouter } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+
 function App() {
-  console.log('did this happens');
-  counter++;
+ 
   return (
     <div className='App'>
-    <Navbar links ={['Home', 'Anout Me', 'Portfolio', 'Contact Me']}/>
-    // <AboutMe/>
-    // <Portfolio/>
-    <Counter text='Here is the count captain:'/>
-    {console.log('hello world', counter)}
-    <h2> Welcome to my portfolio</h2>
+   <BrowserRouter>
+    <Navbar links ={['Home', 'About Me', 'Portfolio', 'Contact Me']}/>
+    <Route exact path = "/about">
+    <About/>
+    </Route>
+    <Route exact path = "/profile">
+    <Profile/>
+    </Route>
+    <Route exact path = "/projects">
+    <Projects/>
+    </Route>
+    <Route exact path = "/Portfolio">
+    <Portfolio/>
+    </Route>
+    </BrowserRouter>
     </div>
   );
 }
