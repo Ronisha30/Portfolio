@@ -3,3 +3,9 @@
     align-items: left;
     flex-direction: column;
 }
+.page{
+    min-height: 100vh;
+    min-width: 1200px;
+    align-items: center;
+    margin: auto;
+}

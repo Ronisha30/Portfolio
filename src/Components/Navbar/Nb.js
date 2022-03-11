@@ -8,7 +8,7 @@ export default function Nb() {
       <Container>
         <Navbar.Brand href="#home">Navbar</Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link as={Link} to="/home" href="/home">
+          <Nav.Link as={Link} to="/" href="/">
             Home
           </Nav.Link>
           <Nav.Link as={Link} to="/portfolio" href="/portfolio">
@@ -29,5 +29,6 @@ export default function Nb() {
         </Nav>
       </Container>
     </Navbar>
+
   );
 }
